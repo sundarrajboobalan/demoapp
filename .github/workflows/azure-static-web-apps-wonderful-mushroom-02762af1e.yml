@@ -9,7 +9,7 @@ jobs:
       - name: Print goodbye
         run: echo "Done - bye!"
   second-job:
-    needs: first-job
+    needs: first-job1
     runs-on: windows-latest
     steps:
       - name: Print greeting
@@ -17,5 +17,6 @@ jobs:
       - name: Print goodbye
         run: echo "Done - bye!"       
    
+
 
 
